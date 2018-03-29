@@ -1,6 +1,6 @@
 '''The main function to pars the command-line parameter'''
-from pyclean import VERSION, DIR_KIND, FILE_KIND
-from pyclean.func import cleanup, print_infos
+from pycleanup import VERSION, DIR_KIND, FILE_KIND
+from pycleanup.func import cleanup, print_infos
 import os, argparse
 
 def main():

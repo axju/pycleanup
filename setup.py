@@ -4,7 +4,7 @@ def readme():
     with open('README.md') as f:
         return f.read()
 
-setup(name='pyclean',
+setup(name='pycleanup',
       version='0.0.1',
       description='Clean up your working directory.',
       long_description=readme(),
@@ -13,8 +13,8 @@ setup(name='pyclean',
       author='Axel Juraske',
       author_email='axel.juraske@short-report.de',
       license='MIT',
-      packages=['pyclean'],
+      packages=['pycleanup'],
       entry_points = {
-        'console_scripts': ['pyclean=pyclean.__main__:main'],
-    }
+        'console_scripts': ['pycleanup=pycleanup.__main__:main'],
+      },
       zip_safe=False)

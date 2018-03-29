@@ -1,5 +1,5 @@
 '''This file contains all the functions.'''
-from pyclean import DIR_KIND, FILE_KIND
+from pycleanup import DIR_KIND, FILE_KIND
 import os, shutil
 
 
