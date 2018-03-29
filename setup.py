@@ -8,11 +8,13 @@ setup(name='pyclean',
       version='0.0.1',
       description='Clean up your working directory.',
       long_description=readme(),
-      keywords=' ',
-      url='',
+      keywords='Clean up',
+      url='https://github.com/axju/pyclean',
       author='Axel Juraske',
       author_email='axel.juraske@short-report.de',
       license='MIT',
       packages=['pyclean'],
+      entry_points = {
+        'console_scripts': ['pyclean=pyclean.__main__:main'],
+    }
       zip_safe=False)
-	  
