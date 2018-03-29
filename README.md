@@ -1,36 +1,44 @@
-# pyclean
+pyCleanUp
+=========
 Clean up your working directory.
 
-# Why?
+Why?
+----
 Everyone uses commands like
-```{r, engine='bash', count_lines}
+```shell
 find . -name \*.pyc -delete
 ```
 or
-```{r, engine='bash', count_lines}
+```shell
 find . -name "*.pyc" -exec rm -f {} \;
 ```
-but I often switch me OS from Linux to Windows. Fist I would wrote different
+on linux
+```bash
+pyclean
+```
+But I often switch me OS from Linux to Windows. Fist I would wrote different
 scrips, but a python package is much nicer.
 
-# Install
+Install
+-------
 Uses pip to install.
-```{r, engine='bash', count_lines}
+```shell
 pip install pyclear
 ```
 
-# Uses
+Uses
+----
 As command-line tool.
-```{r, engine='bash', count_lines}
+```shell
 pyclear --help
 ```
 or
-```{r, engine='bash', count_lines}
+```shell
 python -m pyclear --help
 ```
 
 As python function
-```{r, engine='python', count_lines}
+```python
 from pyclean.func import cleanup
 dir = '.'
 args = {'cache': True, 'egg': True}
